@@ -1,7 +1,9 @@
 import { FC } from "react";
 import { cards } from "../data/cards";
 import { CardSass } from "./CardSass";
-import { cardContainer } from  "./styles.module.scss";
+import { cardContainer } from  "./styles.scss";
+
+console.log({cardContainer});
 
 export const CardContainerSass: FC = () => {
     return (
@@ -11,4 +13,4 @@ export const CardContainerSass: FC = () => {
         })}
     </div>
     );
-}
+};

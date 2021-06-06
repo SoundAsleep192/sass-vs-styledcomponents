@@ -20,7 +20,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "plugins": [{ "name": "typescript-plugin-css-modules", "options": {
-      "classnameTransform": "camelCaseOnly"
+      "classnameTransform": "camelCaseOnly",
+      "customMatcher": "\\.(c|le|sa|sc)ss$",
+      "namedExports": true
     } }]
   },
   "include": [

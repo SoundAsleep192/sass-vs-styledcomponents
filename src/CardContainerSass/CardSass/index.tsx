@@ -1,5 +1,7 @@
 import { FC } from "react";
-import styles from  "./styles.module.scss";
+import styles from  "./styles.scss";
+
+console.log({styles});
 
 interface CardSassProps {
     text: string;
