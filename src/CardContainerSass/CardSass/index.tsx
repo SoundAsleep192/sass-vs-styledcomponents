@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "./styles.scss";
+import styles from  "./styles.module.scss";
 
 interface CardSassProps {
     text: string;
@@ -9,7 +9,7 @@ interface CardSassProps {
 
 export const CardSass: FC<CardSassProps> = ({ text, bgColor, isBig }) => {
     return (
-        <div className="card" style={{ backgroundColor: bgColor, width: isBig ? '300px' : '80px'}}>
+        <div className={styles.card} style={{ backgroundColor: bgColor, width: isBig ? '300px' : '80px'}}>
             {text}
         </div>
     );
